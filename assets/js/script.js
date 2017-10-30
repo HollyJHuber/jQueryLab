@@ -4,15 +4,26 @@
 //     alert("yo");
 // });
 
+var tableNumber = $("div.circle").text; 
+
+//this line changes all the numbers to a
+//$("div.circle").text("a
+
+// this code works if I have an ID set on a table
+var table1 = $("#table1");
+
+table1.on('click', function() {
+
+    table1.text("a");
+});
+
+
 // $("ul").hide();
 
 // $("li").filter(":even").css("height", "40px");
 
 // $("p").css("background-color", "rgb(153,153,255");
 
-//  debugger;
-// var btn = $("button");
-// btn.onclick = function() {
 
 // 	$("ul").delay(1200).fadeIn(800);
 
