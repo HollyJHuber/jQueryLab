@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>Holly Huber jQuery Lab Part 1</title>
+		<link href= "./assets/css/styles.css" type="text/css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="flexContainer">
+		<h1>Table Finder</h1>
+		<h3>Pick your table now</h3>
+	<!-- this is the table div -->
+			<div class="whiteContainer">
+				<div class="circle available">1</div>
+				<div class="circle available">2</div>
+				<div class="circle reserved">3</div>
+				<div class="circle available">4</div>
+				<div class="circle available">5</div>
+				<div class="circle available">6</div>
+				<div class="circle available">7</div>
+				<div class="circle available">8</div>
+				<div class="circle available">9</div>
+			</div>
+		</div>
+
+		<!-- form goes here -->
+		<div class="flexContainer">
+			<div class="formContainer">
+				<form>
+					<p class="closeForm">X</p>
+					<h2>New Reservation</h2>
+					<h3>Table Number: <input type="text" class="tableNo"></h3>
+					<p><input type="text" name="reservationName" placeholder="Name for Reservation" class="enterData"></p>
+					<p><input type="tel" name="telephone" placeholder="Phone Number" class="enterData"></p>
+					<p><input type="number" name="reservationCount" placeholder="Number of People" class="enterData"></p>
+					<button>SAVE</button>
+				</form>
+			</div>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+		<script src="./assets/js/script.js"></script>
+	</body>
+</html>
