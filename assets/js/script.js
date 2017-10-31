@@ -4,26 +4,59 @@
 //     alert("yo");
 // });
 
-$(function() {
+/* Brandon's Code */
+/*
+$('.circle.available').on('click', function makeReservation() {
 
+	//let selectedTable = $(this).text();
 
-	$('.circle.available').on('click', function(){
-		$('.formContainer').css('display', 'flex');
+	$('.formContainer').css('display', 'flex');
 
-		//return tableNo on reservation form
-		$('.tableNo').text("Table Number: " + $(this).text());
-		$(this).removeClass('available');
+	//return tableNo on reservation form
+	$('.tableNo').text("Table Number: " + $(this).text());
+
+	$('button').on('click', function(){
+		debugger;
+		$(this).removeClass('available');	
+		$(this).addClass('reserved');	
+		$('.formContainer').css('display', 'none');
 	});
 
 	$('.closeForm').on('click', function(){
+		// $(this).addClass('available');	
+		// $(this).removeClass('reserved');
 		$(".formContainer").css('display', 'none');
 	});
 
-	$('.button').on('click', function(){
-		$(this).removeClass('available');
-		//$(this).addClass('reserved');
-		$(".formContainer").css('display', 'none');
+}); */
+
+
+//$(function() {
+
+	$('.circle.available').on('click', function(){
+		//return tableNo on reservation form
+		$('.tableNo').text("Table Number: " + $(this).text());
+		$(this).addClass('selected');
+		$('.formContainer').css('display', 'flex');
 	});
+
+	$('button').on('click', function(){
+		//debugger;
+
+		$('.selected').addClass('reserved');
+		let testing = $('.selected').text();
+		console.log(testing);
+		//$('.selected').removeClass('available');
+		
+		//$('.formContainer').css('display', 'none');
+	});
+
+	// $('.closeForm').on('click', function(){
+	// 	$('.selected').removeClass('selected');
+	// 	$(".formContainer").css('display', 'none');
+	// });
+
+
 
 
 // after lunch
@@ -31,5 +64,5 @@ $(function() {
 // √) get the damn modal to close
 // _) make submit reserve a table 
 
-});
+//});
 // end of wrapping function!!
