@@ -44,17 +44,15 @@ $('.circle.available').on('click', function makeReservation() {
 		//debugger;
 
 		$('.selected').addClass('reserved');
-		let testing = $('.selected').text();
-		console.log(testing);
-		//$('.selected').removeClass('available');
+			$('.selected').removeClass('available');
 		
-		//$('.formContainer').css('display', 'none');
+		$('.formContainer').css('display', 'none');
 	});
 
-	// $('.closeForm').on('click', function(){
-	// 	$('.selected').removeClass('selected');
-	// 	$(".formContainer").css('display', 'none');
-	// });
+	$('.closeForm').on('click', function(){
+		$('.selected').removeClass('selected');
+		$(".formContainer").css('display', 'none');
+	});
 
 
 
