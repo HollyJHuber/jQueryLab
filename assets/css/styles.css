@@ -54,14 +54,17 @@ h3{
 }
 .available{
 	background-color: lightgrey;
+	cursor: auto;
 }
 .reserved{
 	background-color: grey;
+	cursor: not-allowed;
 }
 .closeForm{
 	text-align: right;
 	color: lightgrey;
 	padding: none;
+	text-decoration: none;
 }
 .enterData{
 	border-top: none;
