@@ -1,5 +1,5 @@
 
-// this code makes the form reset on close WTF?
+// this code makes the form reset on cancel WTF?
 
 
 $(function() {
@@ -18,15 +18,19 @@ $(function() {
 	$('button').on('click', function(){
 		$('.selected').removeClass('available');
 		$('.selected').addClass('reserved');
-		$('.selected').removeClass('selected');
-		$(".formContainer").css('display', 'none');
-		// I would like to try to reuse the function for closeform onclick
+		cancelForm();
 	});
 
-	// close form
-	$('.closeForm').on('click', function (){
-		//$('.selected').removeClass('selected');
+	// cancel function
+	function cancelForm(){
+		$('.selected').removeClass('selected');
 		$(".formContainer").css('display', 'none');
+	};
+
+	// close form
+	$('.closeForm').on('click', function(){
+		cancelForm();
+		//return false;
 	});
 
 });
