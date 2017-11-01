@@ -1,8 +1,11 @@
 
+// this code makes the form reset on close WTF?
+
+
 $(function() {
 
+	// reserve table, open form, set selected to note which table
 	$('.circle.available').on('click', function(){
-		//return tableNo on reservation form
 		if( $(this).attr('class') === 'circle reserved'){
 			return;
 		} 
@@ -11,16 +14,18 @@ $(function() {
 		$('.formContainer').css('display', 'flex');
 	});
 
+	// reserve button
 	$('button').on('click', function(){
 		$('.selected').removeClass('available');
 		$('.selected').addClass('reserved');
 		$('.selected').removeClass('selected');
 		$(".formContainer").css('display', 'none');
-		// I would like to know how to reuse the function for closeform onclick
+		// I would like to try to reuse the function for closeform onclick
 	});
 
+	// close form
 	$('.closeForm').on('click', function (){
-		$('.selected').removeClass('selected');
+		//$('.selected').removeClass('selected');
 		$(".formContainer").css('display', 'none');
 	});
 
